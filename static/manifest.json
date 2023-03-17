@@ -1,0 +1,28 @@
+{
+	"name": "SvelteKit PWA Starter",
+	"short_name": "PWA",
+	"icons": [
+		{
+			"src": "/icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/",
+	"display": "standalone",
+	"theme_color": "white",
+	"shortcuts": [
+		{
+			"name": "My Cool Example Shortcut",
+			"short_name": "My Shortcut",
+			"description": "An example of a shortcut that goes directly to a page.",
+			"url": "/about",
+			"icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+		}
+	]
+}
