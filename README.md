@@ -1,22 +1,24 @@
-# create-svelte
+# SvelteKit PWA Starter
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+> 🚨 WIP. I've only tested on iOS Safari, and it does not include service worker/caching/offline functionality (yet).
 
-## Creating a project
+A bare-minimum starter repository for a SvelteKit progressive web app (PWA) that's installable to a device's home screen. It's currrently just the SvelteKit skeleton project starter, with the [following additions]('https://github.com/evanwinter/sveltekit-pwa-starter/commit/80fbd15ac79b71867eda6dd48e3b1d9fcca2dda2'):
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Adds `/static/manifest.json`
+- Adds an icon, in two sizes: `/static/icon-192x192.png` and `/static/icon-512x512.png`.
+- Adds `<meta>` tags in `/src/app.html`:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+```html
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
 ```
+
+These additions make the application installable to your device's home screen.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependencies with `npm install` (or `pnpm install` or `yarn`), and start a development server:
 
 ```bash
 npm run dev
